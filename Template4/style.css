@@ -31,7 +31,6 @@ nav {
 .list li {
     display: inline-block;
     padding: 15px 20px;
-    background-color: rgb(95, 95, 226);
     border: none;
     cursor: pointer;
     transition: all 1.3s ease 0s;
@@ -43,6 +42,31 @@ nav {
 .list li a:hover {
     color: blue;
 }
+
+.anim span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.anim span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.anim:hover span {
+    padding-right: 25px;
+  }
+  
+.anim:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 button {
     padding: 12px 35px;
@@ -56,6 +80,7 @@ button {
 
 button:hover {
     background-color: aquamarine;
+    box-shadow: 10px 5px 5px rgb(0, 102, 255);
 }
 
 li, a, button {
@@ -66,7 +91,7 @@ li, a, button {
 }
 
 .container {
-    background-image: url(./asset/fond_body.jpg);
+    background-image: url(./assets/image/background_picture.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -110,4 +135,11 @@ form {
     border: none;
     cursor: pointer;
     transition: all 1.3s ease 0s;
+}
+._form:hover {
+    background-color: burlywood;
+}
+
+label {
+    font-size: 20px;
 }
