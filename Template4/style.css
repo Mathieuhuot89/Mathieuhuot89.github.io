@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 2vw;
+}
+
+
+#logo {
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(135, 181, 233);
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px; /* vw */
+    
+}
+
+.list li {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgb(95, 95, 226);
+    border: none;
+    cursor: pointer;
+    transition: all 1.3s ease 0s;
+}
+
+.list li a {
+    transition: all 1.3s ease 0s;
+}
+.list li a:hover {
+    color: blue;
+}
+
+button {
+    padding: 12px 35px;
+    background-color: rgb(138, 138, 190);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 1.3s ease 0s;
+    font-size: 2vw;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+li, a, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(245, 240, 240);
+}
+
+.container {
+    background-image: url(./asset/fond_body.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+h1 {
+    margin: auto;
+    text-align: center;
+    color:white;
+    padding-top: 120px;
+    font-size: 70px;
+}
+
+h2 {
+    margin: auto;
+    text-align: center;
+    color:black;
+    padding: 40px 0px;
+}
+
+.container p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 145px 300px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+._form {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgb(227, 227, 236);
+    border: none;
+    cursor: pointer;
+    transition: all 1.3s ease 0s;
+}
