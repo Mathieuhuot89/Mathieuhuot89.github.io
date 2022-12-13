@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 
 header {
     font-size: 2vw;
+    font-family: 'Lobster', cursive;
 }
 
 
@@ -19,6 +22,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(135, 181, 233);
+    font-family: 'Lobster', cursive;
 }
 
 .list {
@@ -85,20 +89,18 @@ button:hover {
 }
 
 nav li, nav a, nav button {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lobster', cursive;
     font-weight: 300;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
 body {
-   /* width: 100vw; */
    height: 100vh; 
+   font-family: 'Lobster', cursive;
+   font-size: 16px;
 }
 
-header, main {
-   /* width: 100%; */
-}
 .container {
     background-image: url('./assets/image/background_picture.jpg');
     background-size: cover;
@@ -107,7 +109,6 @@ header, main {
     /* width: 100; */
     background-color: #aaa;
 }
-
 
 .container h1 {
     margin: auto;
@@ -120,14 +121,22 @@ header, main {
 h2 {
     margin: auto;
     text-align: center;
-    color:rgb(247, 244, 244);
+    color:rgb(34, 72, 148);
     padding: 40px 0px;
 }
 
-h3, h4 {
+h3, h4, dl {
     text-align: center;
     padding: 30px 0px;
     font-size: 1.8rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-size: 1.4rem;
 }
 
 .container p {
@@ -170,15 +179,15 @@ label {
 .picture {
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    width: 100%;
 }
 
 .img_picture {
     width : 550px;
-    height : 350px;
  }
 
 .query {
-    margin: 25px 0px;
     background-color: aqua;
  }
 
@@ -291,9 +300,7 @@ details[open] summary {
     text-align: center;
     font-size: 10vh;
     padding-top: 10vh;
- }
-
-
+}
 
 .sign {
     display: flex;
@@ -343,118 +350,62 @@ details[open] summary {
     font-size: 3rem;
 }
 
-/*
-@media only screen and (max-width: 768px) {
-    body {
-      background-color: rgb(17, 21, 22);
-    }
-
-    .container p {
-        padding: 45px 150px;
-        font-size: 16px;
-
-    }
-
+@media only screen and (max-width: 1600px) {
     .img_picture {
         width : 350px;
-        height : 170px;
      }
+}
 
-     figcaption {
-        display: flex;
-        justify-content: center;
-        font-weight: bold;
-        font-size: 1.5rem;
-        margin-top: 3vw;
-        border: solid 1px;
-        color: aqua;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        background-color: beige;
-     }
-
-     h4, h3 {
-        font-size: 0.9rem;
-     }
-
-     .map {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
-    .image_map {
-        height: 280px;
-        width: 400px;
-    }
-    
-    .map_lien {
-        display: flex;
-        align-items: center;
-        font-size: 1.5rem;
-    }
-  }
-
-  @media only screen and (max-width: 320px) {
-
+@media only screen and (max-width: 1100px) {
     body {
-        background-color: rgb(206, 16, 16);
-      }
-
-      .container p {
-        padding: 21px 75px;
-        font-size: 8px;
+      background-color: rgb(17, 21, 22);
+      font-size: 12px;
     }
 
     .container h1 {
-        margin: auto;
-        text-align: center;
-        color:white;
-        padding-top: 60px;
-        font-size: 35px;
+        font-size: 50px;
     }
-    
+
+    .container p{
+        padding: 45px 150px;
+        font-size: 0.9rem;
+
+    }
 
     .img_picture {
-        width : 350px;
-        height : 170px;
+        width : 250px;
      }
 
-     figcaption {
-        display: flex;
-        justify-content: center;
-        font-weight: bold;
-        font-size: 1.5rem;
-        margin-top: 3vw;
-        border: solid 1px;
-        color: aqua;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        background-color: beige;
-     }
-
-     h4, h3 {
-        font-size: 0.9rem;
-     }
-
-     .map {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
     .image_map {
-        height: 280px;
-        width: 400px;
-    }
-    
-    .map_lien {
-        display: flex;
-        align-items: center;
-        font-size: 1.5rem;
+        height: 400px;
+        width: 750px;
     }
 
   }
 
+  @media only screen and (max-width: 800px) {
+    
+    .image_map {
+        height: 200px;
+        width: 450px;
+    }
 
-*/
+    .img_picture {
+        width : 150px;
+     }
+    
+  }
+
+  @media only screen and (min-width: 700px) {
+    #logo2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #logo {
+        display: none;
+    }
+}
+
+
