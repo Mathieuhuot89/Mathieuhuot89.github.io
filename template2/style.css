@@ -13,6 +13,7 @@ h2 {
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 h3 {
@@ -39,41 +40,43 @@ h5 {
     
 }
 body {
-    
+    height: 100vh;
     background: linear-gradient(90deg, #460303, #830b43);
 }
 
 #navi {
     background-color: black;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav a{
     color: white;
 }
 
-.nav li{
-    display: inline;
-    margin-right: 30px;
-    justify-content: center;
-    padding-right: 270px;
-}
 
 ul.nav  {
     display: flex;
     justify-content: space-around;
-    float: right;
     margin-bottom:10px;
     font-size: 30px;
     padding-top: 15px;
 }
 
-.container {
+#container {
     padding-top: 10px;
 
 }
 
 .section {
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .fond {
@@ -83,12 +86,12 @@ ul.nav  {
     margin-top: 25px;
 }
 
-a .hover:hover{
+a:hover{
     text-decoration:underline;
     color: red;
 }
 
-.article {
+.presentation, .categorie {
     color: rgb(3, 3, 3);
     margin-left: 80px;
     margin-right: 80px;
@@ -102,27 +105,9 @@ a .hover:hover{
     text-decoration: underline;
 }
 
-.film {
-    float: left;
-}
-
-.acteur p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 0.7px;
-    padding-left: 500px;
-}
-
-.categorie {
-    font-size: 22px;
-    text-decoration: underline;
-}
-
 .photo {
-    display: flex;
-    justify-content: center;
     width: 750px;
     height: 350px;
-    padding-left: 400px;
 }
 
 table {
@@ -134,7 +119,7 @@ table,
 td {
     border: 1px solid #333;
     border-collapse: collapse;
-    padding: 35px;
+    padding: 25px;
     text-align: center;
     font-size: 30px;
 }
@@ -207,13 +192,7 @@ tfoot {
     font-size: 25px;
 }
 
-.mail {
-    padding-left: 30px;
-    padding-top: 12px;
-    padding-right: 30px;
-    padding-bottom: 12px;
-    font-size: 25px;
-}
+
 
 .selection {
     padding-left: 30px;

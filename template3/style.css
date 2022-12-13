@@ -52,14 +52,13 @@ header {
   list-style-type: none ;  
 }
 
-
 .reserve {
   display: flex;
   justify-content: center;
   color: white;
   font-size: 24px;
   padding-top: 80px;
-  align:center;
+  align-items:center;
 }
 
 form {

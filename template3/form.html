@@ -6,26 +6,29 @@
     <title>Formulaire</title>
 </head>
 
-<body>
+<body class="form1">
 
-    <h1>Formulaire</h1>
-    <div id="inscription">
-    <div class="reserve" class="text-primary"><strong>Inscription</strong></div>
-    <form action="#" method="POST">
+    <div class="form">
+        <h1>Formulaire</h1>
+        <div id="inscription">
+            <div class="reserve" class="text-primary"><strong>Inscription</strong></div>
+            <form action="#" method="POST">
 
-        <div class="name">
-            <label for="name">Nom Prénom:</label><br />
-            <input id="name" name="name" type="text" value="" size="98" style="height:25px" />
+                <div class="name">
+                    <label for="name">Nom Prénom:</label><br />
+                    <input id="name" name="name" type="text" value="" size="98" style="height:25px" />
+                </div>
+
+                <div class="mail">
+                    <label for="email">Adresse email:</label><br />
+                    <input id="email" name="email" type="text" size="98" style="height:25px" />
+                </div>
+
+                <button class="btn" type="button">S'inscrire</button>
+            </form>
         </div>
+    </div>
 
-        <div class="mail">
-            <label for="email">Adresse email:</label><br />
-            <input id="email" name="email" type="text" size="98" style="height:25px" />
-        </div>
-
-        <button class="btn" type="button">S'inscrire</button>
-    </form>
-</div>
 
 
     <div id="contact">
@@ -50,6 +53,24 @@
             <button class="btn" type="button">S'inscrire</button>
         </form>
     </div>
+
+    <form action="contact">
+        <div>
+            <label for="name">Votre prénom <sup>*</sup></label>
+            <input type="text" require id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="email">Votre email <sup>*</sup></label>
+            <input type="text" require id="email" name="email">
+        </div>
+
+        <div>
+            <label for="message">Votre message</label>
+            <textarea require id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Envoyer votre email</button>
+    </form>
 
 </body>
 

@@ -11,25 +11,23 @@
 
 <body>
   <nav id="navi">
-    <div class="navbar">
-      <ul class="nav">
-        <li><a class="hover" href="#">Programmation</a></li>
-        <li><a href="#">Nos films</a></li>
-        <li><a href="#form">Réservation</a></li>
-      </ul>
-    </div>
+    <ul class="nav">
+      <li><a href="#container">Programmation</a></li>
+      <li><a href="#films">Nos films</a></li>
+      <li><a href="#form">Réservation</a></li>
+    </ul>
     <img src="./assets/image/movie.jpg" alt="fond" class="fond">
   </nav>
 
 
-  <main class="container">
+  <main id="container">
     <h1>Métropolis cinéma</h1>
 
-    <article class="article">
-      <h2 id="festival">Présentation du cinéma</h2>
-      <p class="text-muted mb-5">25 juillet 2022, </p>
+    <article class="presentation">
+      <h2>Présentation du cinéma</h2>
+      <p>25 juillet 2022, </p>
 
-      <p class="presentation">Depuis plus de 30 ans, le Cinéma du Métropolis est un rendez-vous phare
+      <p>Depuis plus de 30 ans, le Cinéma du Métropolis est un rendez-vous phare
         de l’été parisien.
         <span class="important">La prairie du triangle devient durant quatre soirées la plus grande salle de cinéma
           de Paris à ciel
@@ -48,45 +46,48 @@
       </p>
     </article>
 
-    <article class="article">
+    <div class="presentation">
       <h2>Listes des catégories</h2>
-      <ul class="categorie">
+      <ul>
         <li>Marvel</li>
         <li>Actions</li>
         <li>Comédie</li>
       </ul>
-    </article>
+    </div>
+
 
     <section class="section">
-      <h3>Marvel</h3>
-      <div>
+
+      <div class="choice_film">
+        <h3>Marvel</h3>
         <a href="https://www.google.com/search?q=marvel&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiOufyouNj7AhVTQaQEHZLnAakQ_AUoAnoECAIQBA&biw=1600&bih=757&dpr=1#imgrc=FqOTpGjg8T8d2M"
           target="_blank"><img class="photo" src="./assets/image/marvel.jpg" alt="Marvel"></a>
       </div>
 
-      <h3>Actions</h3>
-      <div>
+
+      <div class="choice_film">
+        <h3>Actions</h3>
         <a href="https://www.google.com/search?q=liste+films+d%27action&hl=fr&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiGjubYuNj7AhWnaqQEHQ7UAigQ_AUoAnoECAMQBA&biw=1600&bih=757&dpr=1#imgrc=xC1_BRJWCMSguM"
-          target="_blank"><img class="photo" src="./assets/image/action_movie.webp"></a>
+          target="_blank"><img class="photo" src="./assets/image/action_movie.webp" alt="image actions"></a>
       </div>
 
-      <h3>Comédie</h3>
-      <div>
+
+      <div class="choice_film">
+        <h3>Comédie</h3>
         <a href="https://www.google.com/search?q=liste+film+humour&tbm=isch&ved=2ahUKEwjvvtLhv9j7AhU9lycCHTtmAm0Q2-cCegQIABAA&oq=liste+film+humour&gs_lcp=CgNpbWcQAzIHCAAQgAQQGDoFCAAQgAQ6BggAEAUQHjoGCAAQCBAeUJkGWPY6YJg9aAZwAHgAgAE2iAG5BpIBAjIwmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=cKiIY-_GNr2unsEPu8yJ6AY&bih=757&biw=1600&hl=fr#imgrc=m8zUfFLc7gXyaM"
-          target="_blank"><img class="photo" src="./assets/image/comedy.jpg"></a>
+          target="_blank"><img class="photo" src="./assets/image/comedy.jpg" alt="image comédie"></a>
       </div>
 
     </section>
 
-    <h4>Tableaux des films</h4>
+    <h4 id="films">Tableaux des films</h4>
     <div class="table">
+
       <div>
         <table>
           <thead>
-            <tr>
-              <th colspan="2">Marvel</th>
+              <th colspan="2">Films Marvel</th>
               <th>Notes</th>
-            </tr>
           </thead>
           <tbody>
             <tr>
@@ -94,12 +95,12 @@
               <td>10/10</td>
             </tr>
             <tr>
-              <td colspan="2">Hulk</td>
-              <td>10/10</td>
+              <td colspan="2">Batman</td>
+              <td>200/10</td>
             </tr>
             <tr>
-              <td colspan="2">Batman</td>
-              <td>09/10</td>
+              <td colspan="2">Hulk</td>
+              <td>07/10</td>
             </tr>
           </tbody>
         </table>
@@ -108,10 +109,8 @@
       <div>
         <table>
           <thead>
-            <tr>
               <th colspan="2">Actions movies</th>
               <th>Notes</th>
-            </tr>
           </thead>
           <tbody>
             <tr>
@@ -133,10 +132,9 @@
       <div>
         <table>
           <thead>
-            <tr>
+
               <th colspan="2">Films comédie</th>
               <th>Notes</th>
-            </tr>
           </thead>
           <tbody>
             <tr>
@@ -157,22 +155,24 @@
     </div>
 
     <div id="form">
-      <div class="reserve"><h5><strong>Réserver en ligne</strong></h5></div>
+      <div class="reserve">
+        <h5><strong>Réserver en ligne</strong></h5>
+      </div>
       <form action="#" method="POST">
 
         <div class="name">
           <label for="name">Nom Prénom:</label><br />
-          <input id="name"  name="name" type="text" value="" size="98" style="height:25px"/>
+          <input id="name" name="name" type="text" value="" size="98" style="height:25px" />
         </div>
 
-        <div class="mail">
+        <div class="name">
           <label for="email">Adresse email:</label><br />
-          <input id="email" name="email" type="text" size="98" style="height:25px"/>
+          <input id="email" name="email" type="text" size="98" style="height:25px" />
         </div>
 
         <div class="selection">
-          <label for="film">Sélectionner le film</label><br />
-          <select name="film" id="film" style="height:25px">
+          <label>Sélectionner le film</label><br />
+          <select name="film" style="height:25px">
             <option value="Superman" selected>Superman</option>
             <option value="Batman">Batman</option>
             <option value="Hulk">Hulk</option>
@@ -186,19 +186,15 @@
         </div>
 
         <div class="place">
-          <label for="film">Nombres de places</label><br />
-          <select name="film" id="film" style="height:25px">
+          <label>Nombres de places</label><br />
+          <select name="film" style="height:25px">
             <option value="Superman" selected>1 - 2 places</option>
             <option value="Hulk">3 - 5 places</option>
             <option value="Terminator">5 - 10 places</option>
             <option value="jumanji">Plus de 10 places</option>
           </select>
         </div>
-
-
-
-        <button class="btn"
-        type="button">Réserver</button>
+        <button class="btn" type="button">Réserver</button>
       </form>
     </div>
   </main>
