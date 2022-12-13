@@ -1,195 +1,197 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="./assets/img/logo2.png">
-  <title>Châlet</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant de Mathieu Huot">
+    <link rel="icon" type="image/png" href="./assets/img/logo2.png">
+    <link rel="stylesheet" href="./core/css/style.css">
+    <title>Restauration</title>
 </head>
 
 <body>
-  <header>
-      <div class="logo-block">
-        <img src="./assets/img/logo3.webp" alt="Logo" class="logo">
-      </div>
-    <nav>
-        <ul class="nav">
-          <li> <a href="#acheter">Acheter</a></li>
-          <li> <a href="#louer">Location</a></li>
-          <li> <a href="form.html#inscription">S'inscrire</a></li>
-          <li> <a href="form.html#contact">Nous contacter</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="nav_link">
+            <div>
+                <h1 class="navbar">Les délices de l'ASIE</h1>
+            </div>
+            <div>
+                <ul class="navbar">
+                    <li><a href="#photo">Photos</a></li>
+                    <li><a href="#localisation">Localisation</a></li>
+                    <li><a href="./form.html">Contact</a></li>
+                </ul>
+            </div>
 
-    <video class="video" controls autoplay loop muted>
-      <source src="./assets/img/mountain.mp4" type="video/mp4">
-    </video>
-  </header>
-
-  <main class="container">
-
-    <h1>Châlets à louer & acheter</h1>
+        </nav>
+        <img class="fond_image" src="./assets/img/slide.jpg.jpg" alt="img_head">
+    </header>
 
     <article>
-      <h2>Quelques photos</h2>
-      <div class="photo">
-        <p class="float">
-          <img src="./assets/img/Chalet-1.jpg" alt="photo1">
-        </p>
+        <h2>A propos</h2>
+        <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour
+            calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la
+            mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
+        <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour
+            calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la
+            mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
+        <hr>
 
-        <p class="text">Qui sommes-nous ? </br>
-          L’agence immobilière Chalets et Caviar est à vos côtés depuis plus de 10 ans afin de vous proposer une
-          sélection de chalets de prestige. Nous avons fait du haut-de-gamme notre spécialité pour faire de vos
-          séjours à la montagne des moments inoubliables.</p>
-      </div>
+        <h2>Spécialité</h2>
+        <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour
+            calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la
+            mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
+        <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour
+            calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la
+            mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
     </article>
 
-    <article>
-      <div class="photo">
-        <p class="float">
-          <img src="./assets/img/chalet/Chalet-3.jpg" alt="photo2">
-        </p>
+    <section>
+        <h3 id="photo">Photos et vidéos</h3>
+        <div class="medias">
+            <div>
+                <img src="./assets/img/restaurant1.jpg" alt="Image restaurant 1">
+            </div>
+            <div>
+                <img src="./assets/img/restaurant2.webp" alt="Image restaurant 2">
+            </div>
+            <div>
+                <img src="./assets/img/restaurant_club.jpg" alt="Image restaurant 3">
+            </div>
+        </div>
 
-        <p class="text">Qui sommes-nous ? </br>
-          L’agence immobilière Chalets et Caviar est à vos côtés depuis plus de 10 ans afin de vous proposer une
-          sélection de chalets de prestige. Nous avons fait du haut-de-gamme notre spécialité pour faire de vos
-          séjours à la montagne des moments inoubliables.</p>
-      </div>
-    </article>
+        <div class="medias">
+            <video class="video" controls autoplay loop muted>
+                <source src="./assets/img/video_paris1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
 
-    <h3>Acheter ou louer vos chalets</h3>
-    <div class="tableau">
-      <div> 
-        <table id="acheter">
-          <thead>
-            <tr>
-              <th colspan="2">
-                Acheter
-              </th>
-              <th>
-                <h4>Prix</h4>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mont blanc</td>
-              <td>Mont blanc</td>
-              <td>598 000£</td>
-            </tr>
-            <tr>
-              <td>Auvergne</td>
-              <td>Auvergne</td>
-              <td>780 000£</td>
-            </tr>
-            <tr>
-              <td>Chalet</td>
-              <td>Chalet</td>
-              <td>678 000£</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-
-      <div>
-        <table id="louer">
-          <thead>
-            <tr>
-              <th colspan="2">Louer</th>
-              <th>Prix</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mont blanc</td>
-              <td>Mont blanc</td>
-              <td>20 000£</td>
-            </tr>
-            <tr>
-              <td>Auvergne</td>
-              <td>Auvergne</td>
-              <td>15 000£</td>
-            </tr>
-            <tr>
-              <td>Chalet</td>
-              <td>Chalet</td>
-              <td>9 990£</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="hidden">
-        <table>
-          <thead>
-            <tr>
-              <th colspan="2">Prêt</th>
-              <th>Prix</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mont blanc</td>
-              <td>Mont blanc</td>
-              <td>20 000£</td>
-            </tr>
-            <tr>
-              <td>Auvergne</td>
-              <td>Auvergne</td>
-              <td>15 000£</td>
-            </tr>
-            <tr>
-              <td>Chalet</td>
-              <td>Chalet</td>
-              <td>9 990£</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="p4"><h4>Liste à acheter</h4></div>
-      <div class="ordonner"> 
+    <h4>Liste des plats</h4>
+    <div class="recette">
         <ol>
-          <li>Mer</li>
-          <li>Sahara</li>
-          <li>Sibérie</li>
-          <li>desert</li>
-          <li>montagne</li>
+            <li>Bo Bun poulet</li>
+            <li>Riz Loklak boeuf</li>
+            <li>Ban Cheoww</li>
+            <li>Soupen Phnom Penh</li>
+            <li>Poulet sauté au wok</li>
         </ol>
-      </div>
-
-      <div class="p4"> <h5>Liste à louer</h5></div>
-      <div class="ordonner">
-        <ul>
-          <li>Courchevel</li>
-          <li>Sud</li>
-          <li>Ouest</li>
-        </ul>
-
-
-    <h6>Le plan géographique</h6>
-    <div class="map">
-      <div>
-        <iframe id="iframe" title="iframe" width="600" height="250"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-        </iframe>
-
-        <a class="mappy" href="https://www.google.com/maps/place/Chalets+et+caviar/@45.4142021,6.6344102,14.83z/data=!4m5!3m4!1s0x0:0xfcf6076364907e39!8m2!3d45.4147172!4d6.6347198"
-          target="iframe">Clique ici</a>
-
-      </div>
-
-
     </div>
 
+    <h5>Choix des plats selon les origines</h5>
+    <div class="tableau">
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Cambodgien</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Riz Loklak</td>
+                        <td>Grand taille</td>
+                        <td>12£50</td>
+                    </tr>
+                    <tr>
+                        <td>Soupe Pnhom Penh</td>
+                        <td>Grand bol</td>
+                        <td>11£90</td>
+                    </tr>
+                    <tr>
+                        <td>Banh Cheow</td>
+                        <td>Deux crêpes</td>
+                        <td>14£00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
 
-  </main>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Chinois</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nouille sauté</td>
+                        <td>Grande taille</td>
+                        <td>10£00</td>
+                    </tr>
+                    <tr>
+                        <td>Riz cantonais</td>
+                        <td>Grande taille</td>
+                        <td>10£00</td>
+                    </tr>
+                    <tr>
+                        <td>Soupes de boeuf</td>
+                        <td>Grand bol</td>
+                        <td>6£00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <H5>Saveur d'ailleur</H5>
+    <details>
+        <summary>Details</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Autres saveur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Riz 3 trésors</td>
+                    <td>Grande taille</td>
+                    <td>12£00</td>
+                </tr>
+                <tr>
+                    <td>Beignets de crevettes</td>
+                    <td>8 pièces</td>
+                    <td>6£00</td>
+                </tr>
+                <tr>
+                    <td>Nems poulet</td>
+                    <td>4 pièces</td>
+                    <td>4£50</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+
+    <H6>Où nous trouver</H6>
+    <section id="localisation">
+        <div>
+
+            <p>129bis Rue de Tolbiac</p>
+            <p>75013 PARIS</p>
+            <p>France</p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1801.0233849402384!2d2.35983385536979!3d48.82544481573565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671888481c983%3A0x624eed07f2a194a9!2s129bis%20Rue%20de%20Tolbiac%2C%2075013%20Paris!5e0!3m2!1sfr!2sfr!4v1670658904197!5m2!1sfr!2sfr"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <address>
+            65 avenue de choisy<br>
+            75013 PARIS<br>
+            France
+        </address>
+    </footer>
+
 </body>
 
 </html>

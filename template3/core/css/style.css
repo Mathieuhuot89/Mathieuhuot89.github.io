@@ -113,6 +113,12 @@ tfoot {
     justify-content: space-around;
 }
 
-.hidden {
-    display: none;
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    margin-left: 40rem;
+    margin-right: 40rem;
+    background-color: rgb(28, 134, 148);
 }
+
