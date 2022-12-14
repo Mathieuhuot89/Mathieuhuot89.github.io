@@ -12,6 +12,11 @@ header {
     background-color: rgb(31, 29, 29);
 }
 
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
 h2 {
     font-size: 2.48em;
 }
@@ -42,6 +47,7 @@ h6 {
     gap: 2vw;
     font-size: 2vw;
     color: white;
+    padding-left: 20px;
 }
 
 .navbar li a {
@@ -51,6 +57,10 @@ h6 {
 
 .fond_image {
     width: 100%;
+}
+
+.article {
+    padding: 0 35px;
 }
 
 .medias {
