@@ -39,12 +39,11 @@ h6 {
     justify-content: space-between;
 }
 
-.navbar,
-.title {
+.navbar {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    gap: 2vw;
+    gap: 4vw;
     font-size: 2vw;
     color: white;
     padding-left: 20px;
@@ -53,6 +52,12 @@ h6 {
 .navbar li a {
     text-decoration: none;
     color: white;
+    height: 100%;
+}
+
+.navbar li a:hover {
+    color: red;
+    background-color: burlywood;
 }
 
 .fond_image {
