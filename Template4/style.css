@@ -28,8 +28,9 @@ nav {
 .list {
     display: flex;
     list-style-type: none;
-    gap: 2vw; /* vw */
-    
+    gap: 2vw;
+    /* vw */
+
 }
 
 .list li {
@@ -54,7 +55,7 @@ nav {
     position: relative;
     transition: 0.5s;
 }
-  
+
 .anim span:after {
     content: '\00bb';
     position: absolute;
@@ -63,11 +64,11 @@ nav {
     right: -20px;
     transition: 0.5s;
 }
-  
+
 .anim:hover span {
     padding-right: 25px;
 }
-  
+
 .anim:hover span:after {
     opacity: 1;
     right: 0;
@@ -88,7 +89,9 @@ button:hover {
     box-shadow: 10px 5px 5px rgb(0, 102, 255);
 }
 
-nav li, nav a, nav button {
+nav li,
+nav a,
+nav button {
     font-family: 'Lobster', cursive;
     font-weight: 300;
     text-decoration: none;
@@ -96,9 +99,9 @@ nav li, nav a, nav button {
 }
 
 body {
-   height: 100vh; 
-   font-family: 'Lobster', cursive;
-   font-size: 16px;
+    height: 100vh;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
 }
 
 .container {
@@ -113,7 +116,7 @@ body {
 .container h1 {
     margin: auto;
     text-align: center;
-    color:white;
+    color: white;
     padding-top: 120px;
     font-size: 70px;
 }
@@ -121,11 +124,13 @@ body {
 h2 {
     margin: auto;
     text-align: center;
-    color:rgb(34, 72, 148);
+    color: rgb(34, 72, 148);
     padding: 40px 0px;
 }
 
-h3, h4, dl {
+h3,
+h4,
+dl {
     text-align: center;
     padding: 30px 0px;
     font-size: 1.8rem;
@@ -162,6 +167,7 @@ form {
     cursor: pointer;
     transition: all 1.3s ease 0s;
 }
+
 ._form:hover {
     background-color: burlywood;
 }
@@ -173,7 +179,7 @@ label {
 .media {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .picture {
@@ -184,12 +190,8 @@ label {
 }
 
 .img_picture {
-    width : 550px;
- }
-
-.query {
-    background-color: aqua;
- }
+    width: 550px;
+}
 
 figcaption {
     display: flex;
@@ -202,17 +204,19 @@ figcaption {
     margin-left: 10vw;
     margin-right: 10vw;
     background-color: beige;
- }
+}
 
 .audio {
     padding: 35px;
     text-align: center;
- }
+}
 
-table, td, th {
+table,
+td,
+th {
     border: 1px solid;
 }
-  
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -253,7 +257,7 @@ details[open] summary {
 .affaire {
     margin: 30px 60px;
     list-style-type: circle;
-    
+
 }
 
 .prohibited {
@@ -268,11 +272,12 @@ details[open] summary {
 #title2 {
     margin-top: 10rem;
 }
+
 #title2 h2 {
     color: black;
 }
 
-.liste{
+.liste {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
@@ -283,7 +288,8 @@ details[open] summary {
     border: 2px black solid;
 }
 
-.lister ul, .lister ol {
+.lister ul,
+.lister ol {
     display: flex;
     flex-direction: column;
 }
@@ -295,7 +301,8 @@ details[open] summary {
 .contact1 {
     height: 400px;
 }
- .contact h1 {
+
+.contact h1 {
     color: white;
     text-align: center;
     font-size: 10vh;
@@ -323,7 +330,8 @@ details[open] summary {
     font-size: 4vw;
 }
 
-.sign_in label, .sign_in input {
+.sign_in label,
+.sign_in input {
     font-size: 2vw;
 }
 
@@ -352,60 +360,81 @@ details[open] summary {
 
 @media only screen and (max-width: 1600px) {
     .img_picture {
-        width : 350px;
-     }
+        width: 350px;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
     body {
-      background-color: rgb(17, 21, 22);
-      font-size: 12px;
+        background-color: rgb(17, 21, 22);
+        font-size: 12px;
     }
 
     .container h1 {
         font-size: 50px;
     }
 
-    .container p{
+    .container p {
         padding: 45px 150px;
         font-size: 0.9rem;
 
     }
 
     .img_picture {
-        width : 250px;
-     }
+        width: 250px;
+    }
 
     .image_map {
         height: 400px;
         width: 750px;
     }
 
-  }
+}
 
-  @media only screen and (max-width: 800px) {
-    
+@media only screen and (max-width: 800px) {
+
     .image_map {
         height: 200px;
         width: 450px;
     }
 
     .img_picture {
-        width : 150px;
-     }
-    
-  }
+        width: 150px;
+    }
 
-  @media only screen and (min-width: 700px) {
+}
+
+@media only screen and (min-width: 500px) {
     #logo2 {
         display: none;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
     #logo {
         display: none;
     }
+
+    .button {
+        padding: 0 0;
+    }
 }
 
+@media only screen and (max-width: 410px) {
 
+    nav {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .list {
+        display: flex;
+        list-style-type: none;
+        gap: 1vw;
+    }
+
+    .button {
+        padding: 0 0;
+    }
+}
