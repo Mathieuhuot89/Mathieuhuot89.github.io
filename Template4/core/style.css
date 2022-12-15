@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 2vw;
+    font-family: 'Lobster', cursive;
+}
+
+
+#logo {
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(135, 181, 233);
+    font-family: 'Lobster', cursive;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    gap: 2vw;
+    /* vw */
+}
+
+.list li {
+    display: inline-block;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 1.3s ease 0s;
+}
+
+.list li a {
+    transition: all 1.3s ease 0s;
+}
+
+.list li a:hover {
+    color: blue;
+}
+
+.anim span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.anim span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.anim:hover span {
+    padding-right: 25px;
+}
+
+.anim:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+button {
+    padding: 12px 35px;
+    background-color: rgb(138, 138, 190);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 1.3s ease 0s;
+    font-size: 2vw;
+}
+
+button:hover {
+    background-color: aquamarine;
+    box-shadow: 10px 5px 5px rgb(0, 102, 255);
+}
+
+nav li,
+nav a,
+nav button {
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+}
+
+.container {
+    background-image: url('../assets/image/background_picture.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    /* width: 100; */
+    background-color: #aaa;
+}
+
+.container h1 {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+    font-size: 70px;
+}
+
+h2 {
+    margin: auto;
+    text-align: center;
+    color: rgb(34, 72, 148);
+    padding: 40px 0px;
+}
+
+h3,
+h4,
+dl {
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 1.8rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-size: 1.4rem;
+}
+
+.container p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    padding: 145px 300px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+._form {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgb(227, 227, 236);
+    border: none;
+    cursor: pointer;
+    transition: all 1.3s ease 0s;
+}
+
+._form:hover {
+    background-color: burlywood;
+}
+
+label {
+    font-size: 20px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+
+}
+
+.picture {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.img_picture {
+    width: 550px;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 6vw;
+    border: solid 1px;
+    color: aqua;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: beige;
+}
+
+.audio {
+    padding: 35px;
+    text-align: center;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_landing {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    background-color: rgb(28, 134, 148);
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+.affaire {
+    margin: 30px 60px;
+    list-style-type: circle;
+
+}
+
+.prohibited {
+    list-style-type: upper-roman;
+    margin: 30px 60px;
+}
+
+.animal {
+    margin: 30px 60px;
+}
+
+#title2 {
+    margin-top: 10rem;
+}
+
+#title2 h2 {
+    color: black;
+}
+
+.liste {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.lister {
+    width: 350px;
+    border: 2px black solid;
+}
+
+.lister ul,
+.lister ol {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    background-color: rgb(190, 11, 11);
+}
+
+.contact1 {
+    height: 400px;
+}
+
+.contact h1 {
+    color: white;
+    text-align: center;
+    font-size: 10vh;
+    padding-top: 10vh;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(227, 227, 236);
+    cursor: pointer;
+    transition: all 1.3s ease 0s;
+    height: 70vh;
+}
+
+.formulaires {
+    height: 100vh;
+}
+
+.sign_up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+.sign_in label,
+.sign_in input {
+    font-size: 2vw;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.map {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image_map {
+    height: 450px;
+    width: 800px;
+}
+
+.map_lien {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 1600px) {
+    .img_picture {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container h1 {
+        font-size: 50px;
+    }
+
+    .container p {
+        padding: 45px 150px;
+        font-size: 0.9rem;
+    }
+
+    .img_picture {
+        width: 250px;
+    }
+
+    .image_map {
+        height: 400px;
+        width: 750px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .image_map {
+        height: 200px;
+        width: 450px;
+    }
+
+    .img_picture {
+        width: 150px;
+    }
+
+    figcaption {
+        font-weight: 500;
+        font-size: 2rem;
+        margin-top: 2vw;
+        border: solid 1px;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        background-color: beige;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    #logo2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        display: none;
+    }
+
+    .container p {
+        padding: 40px 120px;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+
+    #logo {
+        display: none;
+    }
+
+    #logo2 {
+        display: none;
+    }
+
+    button {
+        padding: 11px;
+        background-color: rgb(138, 138, 190);
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 1.3s ease 0s;
+        font-size: 2vw;
+    }
+
+    .btn a {
+        font-weight: 200;
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+    }
+
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .container p {
+        padding: 33px 100px;
+        font-size: 0.7rem;
+    }
+
+    .picture {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 410px) {
+
+    #logo {
+        display: none;
+    }
+
+    #logo2 {
+        display: none;
+    }
+
+    .list {
+        display: flex;
+        list-style-type: none;
+        gap: 1vw;
+    }
+
+    button {
+        padding: 8px;
+        background-color: rgb(33, 33, 36);
+        border-radius: 10px;
+    }
+
+    .btn a {
+        font-weight: 100;
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+    }
+
+    .img_picture {
+        width: 250px;
+    }
+
+    .image_map {
+        height: 200px;
+        width: 350px;
+    }
+
+    figcaption {
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-top: 2vw;
+        border: solid 1px;
+        color: aqua;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        background-color: beige;
+    }
+
+    h3 {
+        padding: 0px 0px;
+        font-size: 1rem;
+    }
+
+    .embedded p {
+        padding: 15px 30px;
+    }
+
+}

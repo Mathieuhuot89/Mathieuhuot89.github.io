@@ -8,6 +8,8 @@
     <meta name="description," content="Mon portolio">
 
     <link rel="stylesheet" href="./core/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
     <script src="./card/scripts/main.js"></script>
     <title>Porfolio</title>
 </head>
@@ -15,47 +17,88 @@
 <body>
     <header>
         <nav>
+            <!-- le h1 c'est en attendant je fais mon logo -->
             <h1>Mathieu HUOT</h1>
             <ul class="nav_link">
-                <li class="nav_li"><span><a href="#">ACCEUIL</a></span></li>
-                <li class="nav_li"><span><a href="#" target="_blank">PORTFOLIO</a></span></li>
-            </ul>
-            <a class="btn" href="#">Contact</a>
+                <li class="nav_li"><span><a href="#propos">ACCEUIL</a></span></li>
+                <li class="nav_li"><span><a href="#projet" target="_blank">PORTFOLIO</a></span></li>
+        </ul>
+            <a class="btn" href="./contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
         <div class="container">
-            <h2>Mathieu HUOT </h2>
+            <h1>Mathieu HUOT </h1>
 
             <p>DÉVELOPPEUR WEB FULLSTACK</p>
 
             <a href="./assets/img/CV_Mathieu_Huot.pdf"><button>Télécharger le cv</button></a>
         </div>
 
-        <div class="pro">
-            <h3>Porfolio : Mes projets en HTML et CSS:</h3>
-            <figure class="fig1">
-                <img src="#" alt="Photo Boxe" class="image-ronde">
-            </figure>
-            <figure class="fig2">
-                <a href="./Template1/index.html" target="_blank"><img src="#" alt="PACMAN" class="image-rond"></a>
-            </figure>
-            <figure class="fig3">
-                <a href="./template2/index.html" target="_blank"><img src="#" alt="McGregor" class="image-rond"></a>
-            </figure>
-            <figure class="fig4">
-                <a href="./template3/index.html" target="_blank"><img src="#" alt="Tyson" class="image-rond"></a>
-            </figure>
-            <figure class="fig5">
-                <a href="./Template4/index.html" target="_blank"><img src="#" alt="Wilder" class="image-rond"></a>
-            </figure>
+        <div id="propos">
+            <div class="me">
+                <h2>A propos de moi</h2>
+            </div>
+            <div class="ma_presentation">
+                <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                    pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt
+                    ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum
+                    ou Lipsum.</p>
+            </div>
+
         </div>
-    
+
+        <div id="projet">
+            <div>
+                <h3>Porfolio</h3>
+            </div>
+            <div class="project_porfolio">
+                <div class="project_img">
+                    <p>Projet 1</p>
+                    <a href="./Template1/index.html"><img src="/assets/img/projet1.jpg" alt="projet 1"></a>
+                </div>
+                <div class="project_img">
+                    <p>Projet 2</p>
+                    <a href="./template2/index.html"><img src="/assets/img/projet2.jpg" alt="projet 1"></a>
+                </div>
+                <div class="project_img">
+                    <p>Projet 3</p>
+                    <a href="./template3/index.html"><img src="/assets/img/background1.jpg" alt="projet 1"></a>
+                </div>
+                <div class="project_img">
+                    <p>Projet 4</p>
+                    <a href="./Template4/index.html"><img src="/assets/img/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="projet 1"></a>
+                </div>
+            </div>
+
+
+            <!-- <div class="pro">
+                <figure class="fig1">
+                    <img src="./assets/img/HTML5.webp" alt="Photo Boxe" class="image-ronde">
+                </figure>
+                <figure class="fig2">
+                    <a href="./Template1/index.html" target="_blank"><img src="./assets/img/projet1.jpg" alt="PACMAN" class="image-rond"></a>
+                </figure>
+                <figure class="fig3">
+                    <a href="./template2/index.html" target="_blank"><img src="#" alt="McGregor" class="image-rond"></a>
+                </figure>
+                <figure class="fig4">
+                    <a href="./template3/index.html" target="_blank"><img src="#" alt="Tyson" class="image-rond"></a>
+                </figure>
+                <figure class="fig5">
+                    <a href="./Template4/index.html" target="_blank"><img src="#" alt="Wilder" class="image-rond"></a>
+                </figure>
+            </div> -->
+
+        </div>
+
+        
+
     </main>
 
     <footer>
-      
+
     </footer>
 
 </body>
